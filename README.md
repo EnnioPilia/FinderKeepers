@@ -1,36 +1,36 @@
-# 🧩 Finders Keepers – Monorepo
+#  Finders Keepers – Monorepo
 
 Monorepo complet de l’application **Finders Keepers**, une solution fullstack permettant de signaler, rechercher et gérer des objets perdus ou trouvés.
 
 ---
 
-## 📦 Structure du projet
+## Structure du projet
 
 ```text
 FindersKeepers/
 │
-├── backend/              # API REST (Spring Boot microservices)
-├── frontend/             # Application mobile + web (React Native / React)
-├── admin/                # Interface d’administration (Angular)
+├── BackFindersKeepers/              # API REST (Spring Boot microservices)
+├── FrontFindersKeepers/             # Application mobile + web (React Native / React)
+├── AdminFindersKeepers/             # Interface d’administration (Angular)
 └── README.md
 ```
 
 ---
 
-## 🚀 Présentation
+##  Présentation
 
 Application permettant de :
 
-- 🔍 Rechercher des objets perdus/trouvés  
-- 📢 Publier des annonces  
-- 🖼️ Ajouter photos + localisation  
-- 💬 Échanger entre utilisateurs  
-- 👤 Gérer son profil  
-- 🛡️ Administrer la plateforme  
+-  Rechercher des objets perdus/trouvés  
+-  Publier des annonces  
+-  Ajouter photos + localisation  
+-  Échanger entre utilisateurs  
+-  Gérer son profil  
+-  Administrer la plateforme  
 
 ---
 
-## 🧱 Architecture
+##  Architecture
 
 ```text
 Clients (Mobile / Web / Admin)
@@ -46,9 +46,9 @@ Clients (Mobile / Web / Admin)
 
 ---
 
-## 🔙 Backend – Spring Boot
+## Backend – Spring Boot
 
-### 🧩 Services
+###  Services
 
 - Service Utilisateur (auth, JWT)
 - Service Annonces (CRUD objets)
@@ -56,7 +56,7 @@ Clients (Mobile / Web / Admin)
 - Service Fichiers (upload images)
 - API Gateway
 
-### 🛠️ Stack
+###  Stack
 
 - Java 17
 - Spring Boot 3
@@ -65,28 +65,27 @@ Clients (Mobile / Web / Admin)
 - Maven
 - Docker
 
-### ▶️ Lancement
+###  Lancement
 
 ```bash
 cd backend
 ./mvnw clean install
-docker-compose up
 ```
 
 API : http://localhost:8080
 
 ---
 
-## 📱 Frontend – React Native + React
+##  Frontend – React Native + React
 
-### ✨ Fonctionnalités
+###  Fonctionnalités
 
 - Recherche et filtrage
 - Consultation des annonces
 - Authentification
 - Navigation mobile + web
 
-### 🛠️ Stack
+###  Stack
 
 - React Native (Expo)
 - React Web
@@ -95,7 +94,7 @@ API : http://localhost:8080
 - AsyncStorage
 - Jest
 
-### ▶️ Lancement
+###  Lancement
 
 ```bash
 cd frontend
@@ -105,9 +104,9 @@ npm start
 
 ---
 
-## 🛠️ Admin – Angular
+## 🛠️Admin – Angular
 
-### ✨ Fonctionnalités
+###  Fonctionnalités
 
 - Dashboard statistiques
 - Gestion utilisateurs
@@ -121,7 +120,7 @@ npm start
 - HttpClient
 - JWT
 
-### ▶️ Lancement
+###  Lancement
 
 ```bash
 cd admin
@@ -133,7 +132,7 @@ Interface : http://localhost:4200
 
 ---
 
-## ⚙️ Installation globale
+##  Installation globale
 
 ```bash
 git clone https://github.com/EnnioPilia/FindersKeepers.git
@@ -148,13 +147,13 @@ Puis lancer chaque service séparément :
 
 ---
 
-## 👨‍💻 Auteurs
+##  Auteurs
 
 - Ennio Pilia – Développeur Fullstack
 - Quentin – Co-développeur
 
 ---
 
-## 📄 Licence
+##  Licence
 
 Projet pédagogique – Simplon (2025)
