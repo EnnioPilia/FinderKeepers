@@ -1,212 +1,160 @@
-#  FrontFindersKeepers – Application Frontend React Native + React
+# 🧩 Finders Keepers – Monorepo
 
-Bienvenue dans le frontend de **Finders Keepers**, une application mobile et web conçue pour la gestion simplifiée de ressources et la recherche efficace d’objets, développée dans le cadre de mes projets en développement fullstack.
-
----
-
-## Accès à l’application
-
-Ce frontend est prêt à être intégré avec le backend correspondant.  
-
-Pour une démonstration complète, l’application peut être lancée localement via Expo ou déployée en environnement de test.
+Monorepo complet de l’application **Finders Keepers**, une solution fullstack permettant de signaler, rechercher et gérer des objets perdus ou trouvés.
 
 ---
 
-##  Présentation
+## 📦 Structure du projet
 
-Cette application offre une interface intuitive permettant aux utilisateurs de :  
-
-- Rechercher et filtrer des objets disponibles  
-- Consulter les détails des ressources trouvées  
-- Gérer leur profil et leurs interactions  
-- Naviguer facilement sur mobile et desktop grâce à React Native et React  
-
-L’application est conçue en **mobile-first**, garantissant une expérience fluide et adaptée à toutes les tailles d’écran.
-
----
-
-##  Responsive Design & Cross-Platform
-
-- Conçue principalement avec **React Native** pour mobile (iOS et Android via Expo)  
-- Interface complémentaire React Web pour navigation desktop  
-- Gestion adaptative des tailles d’écran et ergonomie optimisée  
+```text
+FindersKeepers/
+│
+├── backend/              # API REST (Spring Boot microservices)
+├── frontend/             # Application mobile + web (React Native / React)
+├── admin/                # Interface d’administration (Angular)
+└── README.md
+```
 
 ---
 
-##  Fonctionnalités principales
+## 🚀 Présentation
 
--  Recherche et filtrage avancé d’objets  
--  Visualisation détaillée des ressources  
--  Authentification et gestion sécurisée des utilisateurs  
--  Navigation fluide avec React Navigation  
--  Stockage local et gestion d’état (AsyncStorage, Context API)  
--  Tests unitaires front (Jest, React Testing Library)  
+Application permettant de :
 
----
-
-##  Stack technique
-
-| Frontend                     | Outils & Bibliothèques                  | Tests                    | Déploiement              |
-|-----------------------------|---------------------------------------|--------------------------|--------------------------|
-| React Native (Expo)          | React Navigation, AsyncStorage, Axios | Jest, React Testing Library | Expo Go, Vercel (web)    |
-| React (Web)                  | React Router, Tailwind CSS              |                          |                          |
+- 🔍 Rechercher des objets perdus/trouvés  
+- 📢 Publier des annonces  
+- 🖼️ Ajouter photos + localisation  
+- 💬 Échanger entre utilisateurs  
+- 👤 Gérer son profil  
+- 🛡️ Administrer la plateforme  
 
 ---
 
-##  Lancer le projet en local
+## 🧱 Architecture
 
-1. Cloner le dépôt :  
-   ```bash
-   git clone https://github.com/EnnioPilia/FrontFindersKeepers.git
-   cd FrontFindersKeepers
-   ```
-2. Installer les dépendances :  
-   ```bash
-   npm install
-   ```
-3. Démarrer l’application avec Expo :  
-   ```bash
-   npm start
-   ```
-4. Scanner le QR code avec l’application Expo Go sur mobile ou ouvrir dans un navigateur pour la version web.
+```text
+Clients (Mobile / Web / Admin)
+            ↓
+        API Gateway
+            ↓
+ ┌───────────────┬───────────────┬───────────────┬───────────────┐
+ │ User Service  │ Ads Service   │ Message Svc   │ File Service  │
+ └───────────────┴───────────────┴───────────────┴───────────────┘
+            ↓
+     Databases (SQL)
+```
 
 ---
 
-##  Auteurs
+## 🔙 Backend – Spring Boot
 
- **Ennio Pilia** – Étudiant développeur Fullstack Java / React Native / React  
- Projet scolaire réalisé dans le cadre de mon apprentissages fullstack  
- Rôle principal : développement frontend React Native et React, intégration UI/UX, gestion des états et navigation  
+### 🧩 Services
 
- **Quentin** – Co-développeur frontend  
- Contribution : développement et optimisation de composants React Native, assistance sur l’architecture UI  
+- Service Utilisateur (auth, JWT)
+- Service Annonces (CRUD objets)
+- Service Messagerie (messages privés)
+- Service Fichiers (upload images)
+- API Gateway
 
- Projet Simplon – Juillet 2025
+### 🛠️ Stack
 
----
+- Java 17
+- Spring Boot 3
+- Spring Security + JWT
+- PostgreSQL / MySQL
+- Maven
+- Docker
 
-##  Captures d’écran
+### ▶️ Lancement
 
-Voici quelques exemples d’écrans extraits du projet :  
+```bash
+cd backend
+./mvnw clean install
+docker-compose up
+```
 
-![Capture écran 1](./Docu/Capture/screen1.png)  
-*Écran de recherche et filtrage*
-
-![Capture écran 2](./Docu/Capture/screen2.png)  
-*Vue détail d’un objet*
-
-![Capture écran 3](./Docu/Capture/screen3.png)  
-*Profil utilisateur et navigation*
-
----
-
-﻿# BackFindersKeepers – Backend microservices Spring Boot pour l’application Finders Keepers
-
-Backend Java 17+ basé sur une architecture microservices RESTful, fournissant les services essentiels pour l’application de signalement d’objets perdus/trouvés.
+API : http://localhost:8080
 
 ---
 
-## Services principaux
+## 📱 Frontend – React Native + React
 
--  Service Utilisateur : gestion de l’authentification, profils, rôles (JWT + refresh token)  
--  Service Annonces : CRUD des objets perdus/trouvés, gestion des photos, localisation  
--  Service Messagerie : stockage et chiffrement des messages privés entre utilisateurs  
--  Service Fichiers : upload, compression et accès sécurisé aux photos  
--  Service Gateway : API Gateway pour gestion centralisée des requêtes  
+### ✨ Fonctionnalités
 
----
+- Recherche et filtrage
+- Consultation des annonces
+- Authentification
+- Navigation mobile + web
 
-##  Stack technique
+### 🛠️ Stack
 
-| Backend                  | Base de données       | Sécurité                 | Tests                   | Outils                      |
-|--------------------------|----------------------|--------------------------|-------------------------|----------------------------|
-| Java 17+ Spring Boot 3   | PostgreSQL / MySQL   | Spring Security, JWT     | JUnit, Mockito          | Maven, Docker, GitHub       |
+- React Native (Expo)
+- React Web
+- Axios
+- React Navigation
+- AsyncStorage
+- Jest
 
----
+### ▶️ Lancement
 
-##  Installation et lancement
-
-1. Cloner le dépôt :  
-   ```bash
-   git clone https://github.com/EnnioPilia/BackFindersKeepers.git
-   cd BackFindersKeepers
-   ```
-2. Configurer les bases de données et les paramètres dans `application.yml`.  
-3. Construire et lancer les microservices via Maven et Docker Compose :  
-   ```bash
-   ./mvnw clean install
-   ```
-4. L’API Gateway sera accessible sur `http://localhost:8080`
+```bash
+cd frontend
+npm install
+npm start
+```
 
 ---
 
-##  Auteurs
- **Ennio Pilia** – Développeur Fullstack Java / Spring Boot  
-**Quentin** – Co-développeur backend  
+## 🛠️ Admin – Angular
+
+### ✨ Fonctionnalités
+
+- Dashboard statistiques
+- Gestion utilisateurs
+- Modération annonces
+- Gestion messages
+
+### 🛠️ Stack
+
+- Angular
+- Angular Router
+- HttpClient
+- JWT
+
+### ▶️ Lancement
+
+```bash
+cd admin
+npm install
+ng serve
+```
+
+Interface : http://localhost:4200
 
 ---
 
-#  AdminFindersKeepers – Interface web d’administration Angular
+## ⚙️ Installation globale
 
-Frontend web d’administration pour l’application Finders Keepers, destiné aux modérateurs et gestionnaires.  
+```bash
+git clone https://github.com/EnnioPilia/FindersKeepers.git
+cd FindersKeepers
+```
 
-Permet la gestion des utilisateurs, annonces, et le suivi des signalements.
+Puis lancer chaque service séparément :
 
----
-
-##  Fonctionnalités principales
-
--  Tableau de bord avec statistiques (annonces, utilisateurs, objets retrouvés)  
--  Gestion des utilisateurs : recherche, tri, blocage, suppression  
--  Modération des annonces : consultation, suppression, archivage  
--  Accès aux messages pour gestion des litiges (rôle admin uniquement)  
--  Authentification sécurisée via JWT  
+- backend
+- frontend
+- admin
 
 ---
 
-## Stack technique
+## 👨‍💻 Auteurs
 
-| Frontend                  | Bibliothèques                | Tests                    | Déploiement              |
-|---------------------------|-----------------------------|--------------------------|--------------------------|
-| Angular 19                | Angular Router, HttpClient  | Jasmine, Karma           | Netlify, Vercel          |
-
----
-
-##  Installation et lancement
-
-1. Cloner le dépôt :  
-   ```bash
-   git clone https://github.com/EnnioPilia/AdminFindersKeepers.git
-   cd AdminFindersKeepers
-   ```
-2. Installer les dépendances :  
-   ```bash
-   npm install
-   ```
-3. Démarrer le serveur de développement :  
-   ```bash
-   ng serve
-   ```
-4. L’interface sera accessible sur `http://localhost:4200`
+- Ennio Pilia – Développeur Fullstack
+- Quentin – Co-développeur
 
 ---
 
-##  Auteurs
+## 📄 Licence
 
-**Ennio Pilia** – Développeur Fullstack Java / Angular  
-**Quentin** – Co-développeur frontend admin  
-
-
----
-
-##  Captures d’écran
-
-![Capture écran 1](./Docu/Capture/admin_screen1.png)  
-*Tableau de bord*
-
-![Capture écran 2](./Docu/Capture/admin_screen2.png)  
-*Gestion des utilisateurs*
-
----
-
-
+Projet pédagogique – Simplon (2025)
