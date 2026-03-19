@@ -74,14 +74,14 @@ L’application est conçue en **mobile-first**, garantissant une expérience fl
 
 ## 📌 Auteurs
 
-👨‍💻 **Quentin** – Étudiant développeur Fullstack Java / React Native / React  
+👨‍💻 **Ennio Pilia** – Étudiant développeur Fullstack Java / React Native / React  
 🎓 Projet scolaire réalisé dans le cadre de mon apprentissages fullstack  
 🎯 Rôle principal : développement frontend React Native et React, intégration UI/UX, gestion des états et navigation  
 
-👨‍💻 **Ennio Pilia** – Co-développeur frontend  
+👨‍💻 **Quentin** – Co-développeur frontend  
 🎯 Contribution : développement et optimisation de composants React Native, assistance sur l’architecture UI  
 
-📆 Projet – Juillet 2025
+📆 Projet Simplon – Juillet 2025
 
 ---
 
