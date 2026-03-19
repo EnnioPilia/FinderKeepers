@@ -45,8 +45,9 @@ Permet la gestion des utilisateurs, annonces, et le suivi des signalements.
 
 ## 📌 Auteurs
 
-👨‍💻 **Quentin** – Développeur Fullstack Java / Angular  
-👨‍💻 **Ennio Pilia** – Co-développeur frontend admin  
+👨‍💻 **Ennio Pilia** – Développeur Fullstack Java / Angular  
+👨‍💻 **Quentin** – Co-développeur frontend admin  
+
 
 ---
 
@@ -60,6 +61,4 @@ Permet la gestion des utilisateurs, annonces, et le suivi des signalements.
 
 ---
 
-## 📄 Notes
 
-Le frontend consomme les mêmes microservices REST que le frontend mobile.
