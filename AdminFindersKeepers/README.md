@@ -16,7 +16,7 @@ Permet la gestion des utilisateurs, annonces, et le suivi des signalements.
 
 ---
 
-## 🛠️ Stack technique
+## Stack technique
 
 | Frontend                  | Bibliothèques                | Tests                    | Déploiement              |
 |---------------------------|-----------------------------|--------------------------|--------------------------|
