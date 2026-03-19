@@ -1,0 +1,46 @@
+<div class="container mt-4">
+  <h2>Gestion des annonces</h2>
+
+  <div *ngIf="loading">Chargement...</div>
+  <div *ngIf="error" class="alert alert-danger">{{ error }}</div>
+
+  <table class="table table-striped mt-3" *ngIf="!loading && objects.length > 0">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Nom</th>
+        <th>Description</th>
+        <th>Type</th>
+        <th>Date</th>
+        <th>Localisation</th>
+        <th>Archivé</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let obj of objects">
+        <td>{{ obj.id }}</td>
+        <td>{{ obj.name }}</td>
+        <td>{{ obj.description }}</td>
+        <td>{{ obj.type }}</td>
+        <td>{{ obj.date | date: 'short' }}</td>
+        <td>{{ obj.localisation }}</td>
+        <td>
+          <span class="badge" [ngClass]="obj.reclame ? 'bg-success' : 'bg-secondary'">
+            {{ obj.reclame ? 'Oui' : 'Non' }}
+          </span>
+        </td>
+        <td>
+          <button (click)="toggleObjectReclame(obj)">
+            {{ obj.reclame ? 'Désarchiver' : 'Archiver' }}
+          </button>
+          <button class="btn btn-sm btn-danger" (click)="deleteObject(obj.id)">
+            Supprimer
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div *ngIf="!loading && objects.length === 0" class="text-muted">Aucune annonce à afficher.</div>
+</div>

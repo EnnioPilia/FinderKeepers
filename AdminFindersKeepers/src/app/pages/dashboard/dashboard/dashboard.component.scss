@@ -1,0 +1,46 @@
+.dashboard {
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: #f9fafb;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+
+  h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #111827;
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+
+  .stats {
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 0.75rem;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+
+    h3 {
+      font-size: 1.3rem;
+      margin-bottom: 1rem;
+      color: #1f2937;
+    }
+
+    p {
+      margin: 0.5rem 0;
+      font-size: 1rem;
+      color: #374151;
+    }
+
+    .error {
+      color: #dc2626;
+      margin-top: 1rem;
+    }
+  }
+
+  hr {
+    margin: 2rem 0;
+    border: none;
+    border-top: 1px solid #e5e7eb;
+  }
+}

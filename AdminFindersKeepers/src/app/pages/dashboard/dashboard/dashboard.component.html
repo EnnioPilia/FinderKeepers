@@ -1,0 +1,19 @@
+<div class="dashboard">
+
+  <h2>Tableau de bord Admin</h2>
+  <section class="stats">
+    <h3>Statistiques générales</h3>
+
+    <div *ngIf="loadingStats">Chargement des statistiques...</div>
+    <div *ngIf="errorStats" class="error">{{ errorStats }}</div>
+
+    <div *ngIf="stats && !loadingStats && !errorStats">
+      <p>Utilisateurs : {{ stats.usersCount }}</p>
+      <p>Utilisateurs actifs : {{ stats.activeUsersCount }}</p>
+      <p>Annonces : {{ stats.adsCount }}</p>
+      <p>Objets perdus : {{ stats.lostObjectsCount }}</p>
+      <p>Objets retrouvés : {{ stats.foundObjectsCount }}</p>
+    </div>
+  </section>
+  <hr/>
+</div>

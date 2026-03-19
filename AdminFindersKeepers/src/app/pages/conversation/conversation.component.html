@@ -1,0 +1,32 @@
+<div class="container">
+  <div class="conversations">
+    <h3>Conversations</h3>
+    <ul>
+      <li *ngFor="let conv of conversations"
+          [class.selected]="conv.id === selectedConversationId">
+        {{ conv.nom }} <br/>
+        <small>Participants :</small>
+        {{ getUserDisplayName(conv.user1) }} &amp; {{ getUserDisplayName(conv.user2) }}
+        <br />
+        <button (click)="fetchMessagesByConversationId(conv.id)">Voir les messages</button>
+      </li>
+    </ul>
+  </div>
+
+  <div class="messages" *ngIf="selectedConversationId">
+    <h3>Messages de la conversation #{{ selectedConversationId }}</h3>
+
+    <!-- Aucun message -->
+    <div *ngIf="messages.length === 0" class="no-message">
+      Aucun message dans cette conversation.
+    </div>
+
+    <!-- Liste des messages -->
+    <ul *ngIf="messages.length > 0">
+      <li *ngFor="let msg of messages">
+        <strong>{{ msg.senderId }}</strong> : {{ msg.contenu }}
+        <em>({{ msg.dateEnvoi | date:'short' }})</em>
+      </li>
+    </ul>
+  </div>
+</div>
