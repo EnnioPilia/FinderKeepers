@@ -1,20 +1,20 @@
-﻿# 🎯 BackFindersKeepers – Backend microservices Spring Boot pour l’application Finders Keepers
+﻿# BackFindersKeepers – Backend microservices Spring Boot pour l’application Finders Keepers
 
 Backend Java 17+ basé sur une architecture microservices RESTful, fournissant les services essentiels pour l’application de signalement d’objets perdus/trouvés.
 
 ---
 
-## 🚀 Services principaux
+## Services principaux
 
-- 🔐 Service Utilisateur : gestion de l’authentification, profils, rôles (JWT + refresh token)  
-- 🏷️ Service Annonces : CRUD des objets perdus/trouvés, gestion des photos, localisation  
-- 💬 Service Messagerie : stockage et chiffrement des messages privés entre utilisateurs  
-- 📁 Service Fichiers : upload, compression et accès sécurisé aux photos  
-- 🛡️ Service Gateway : API Gateway pour gestion centralisée des requêtes  
+-  Service Utilisateur : gestion de l’authentification, profils, rôles (JWT + refresh token)  
+-  Service Annonces : CRUD des objets perdus/trouvés, gestion des photos, localisation  
+-  Service Messagerie : stockage et chiffrement des messages privés entre utilisateurs  
+-  Service Fichiers : upload, compression et accès sécurisé aux photos  
+-  Service Gateway : API Gateway pour gestion centralisée des requêtes  
 
 ---
 
-## 🛠️ Stack technique
+##  Stack technique
 
 | Backend                  | Base de données       | Sécurité                 | Tests                   | Outils                      |
 |--------------------------|----------------------|--------------------------|-------------------------|----------------------------|
@@ -22,7 +22,7 @@ Backend Java 17+ basé sur une architecture microservices RESTful, fournissant l
 
 ---
 
-## 🚀 Installation et lancement
+##  Installation et lancement
 
 1. Cloner le dépôt :  
    ```bash
@@ -38,9 +38,9 @@ Backend Java 17+ basé sur une architecture microservices RESTful, fournissant l
 
 ---
 
-## 📌 Auteurs
-👨‍💻 **Ennio Pilia** – Développeur Fullstack Java / Spring Boot  
-👨‍💻 **Quentin** – Co-développeur backend  
+##  Auteurs
+ **Ennio Pilia** – Développeur Fullstack Java / Spring Boot  
+**Quentin** – Co-développeur backend  
 
 ---
 
