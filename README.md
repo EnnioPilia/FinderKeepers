@@ -1,4 +1,4 @@
-#  Finders Keepers – Monorepo
+#  FindersKeepers – Monorepo
 
 Monorepo complet de l’application **Finders Keepers**, une solution fullstack permettant de signaler, rechercher et gérer des objets perdus ou trouvés.
 
