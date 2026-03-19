@@ -1,10 +1,10 @@
-# 🎯 FrontFindersKeepers – Application Frontend React Native + React
+#  FrontFindersKeepers – Application Frontend React Native + React
 
 Bienvenue dans le frontend de **Finders Keepers**, une application mobile et web conçue pour la gestion simplifiée de ressources et la recherche efficace d’objets, développée dans le cadre de mes projets en développement fullstack.
 
 ---
 
-## 🚀 Accès à l’application
+## Accès à l’application
 
 Ce frontend est prêt à être intégré avec le backend correspondant.  
 
@@ -12,7 +12,7 @@ Pour une démonstration complète, l’application peut être lancée localement
 
 ---
 
-## 🚀 Présentation
+##  Présentation
 
 Cette application offre une interface intuitive permettant aux utilisateurs de :  
 
@@ -25,7 +25,7 @@ L’application est conçue en **mobile-first**, garantissant une expérience fl
 
 ---
 
-## 📱 Responsive Design & Cross-Platform
+##  Responsive Design & Cross-Platform
 
 - Conçue principalement avec **React Native** pour mobile (iOS et Android via Expo)  
 - Interface complémentaire React Web pour navigation desktop  
@@ -33,18 +33,18 @@ L’application est conçue en **mobile-first**, garantissant une expérience fl
 
 ---
 
-## 🧩 Fonctionnalités principales
+##  Fonctionnalités principales
 
-- 🔎 Recherche et filtrage avancé d’objets  
-- 📋 Visualisation détaillée des ressources  
-- 🔐 Authentification et gestion sécurisée des utilisateurs  
-- ⚡ Navigation fluide avec React Navigation  
-- 📱 Stockage local et gestion d’état (AsyncStorage, Context API)  
-- 🧪 Tests unitaires front (Jest, React Testing Library)  
+-  Recherche et filtrage avancé d’objets  
+-  Visualisation détaillée des ressources  
+-  Authentification et gestion sécurisée des utilisateurs  
+-  Navigation fluide avec React Navigation  
+-  Stockage local et gestion d’état (AsyncStorage, Context API)  
+-  Tests unitaires front (Jest, React Testing Library)  
 
 ---
 
-## 🛠️ Stack technique
+##  Stack technique
 
 | Frontend                     | Outils & Bibliothèques                  | Tests                    | Déploiement              |
 |-----------------------------|---------------------------------------|--------------------------|--------------------------|
@@ -53,7 +53,7 @@ L’application est conçue en **mobile-first**, garantissant une expérience fl
 
 ---
 
-## 🚀 Lancer le projet en local
+##  Lancer le projet en local
 
 1. Cloner le dépôt :  
    ```bash
@@ -72,20 +72,20 @@ L’application est conçue en **mobile-first**, garantissant une expérience fl
 
 ---
 
-## 📌 Auteurs
+##  Auteurs
 
-👨‍💻 **Ennio Pilia** – Étudiant développeur Fullstack Java / React Native / React  
-🎓 Projet scolaire réalisé dans le cadre de mon apprentissages fullstack  
-🎯 Rôle principal : développement frontend React Native et React, intégration UI/UX, gestion des états et navigation  
+ **Ennio Pilia** – Étudiant développeur Fullstack Java / React Native / React  
+ Projet scolaire réalisé dans le cadre de mon apprentissages fullstack  
+ Rôle principal : développement frontend React Native et React, intégration UI/UX, gestion des états et navigation  
 
-👨‍💻 **Quentin** – Co-développeur frontend  
-🎯 Contribution : développement et optimisation de composants React Native, assistance sur l’architecture UI  
+ **Quentin** – Co-développeur frontend  
+ Contribution : développement et optimisation de composants React Native, assistance sur l’architecture UI  
 
-📆 Projet Simplon – Juillet 2025
+ Projet Simplon – Juillet 2025
 
 ---
 
-## 📸 Captures d’écran
+##  Captures d’écran
 
 Voici quelques exemples d’écrans extraits du projet :  
 
