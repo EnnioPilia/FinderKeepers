@@ -98,3 +98,5 @@ Voici quelques exemples d’écrans extraits du projet :
 ![Capture écran 3](./Docu/Capture/screen3.png)  
 *Profil utilisateur et navigation*
 
+---
+
