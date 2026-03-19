@@ -98,6 +98,8 @@ Voici quelques exemples d’écrans extraits du projet :
 ![Capture écran 3](./Docu/Capture/screen3.png)  
 *Profil utilisateur et navigation*
 
+---
+
 ﻿# BackFindersKeepers – Backend microservices Spring Boot pour l’application Finders Keepers
 
 Backend Java 17+ basé sur une architecture microservices RESTful, fournissant les services essentiels pour l’application de signalement d’objets perdus/trouvés.
@@ -140,7 +142,7 @@ Backend Java 17+ basé sur une architecture microservices RESTful, fournissant l
 
 ##  Auteurs
  **Ennio Pilia** – Développeur Fullstack Java / Spring Boot  
- **Quentin** – Co-développeur backend  
+**Quentin** – Co-développeur backend  
 
 ---
 
@@ -206,6 +208,5 @@ Permet la gestion des utilisateurs, annonces, et le suivi des signalements.
 *Gestion des utilisateurs*
 
 ---
-
 
 
