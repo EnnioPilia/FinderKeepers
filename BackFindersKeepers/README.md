@@ -1,4 +1,4 @@
-﻿# BackFindersKeepers – Backend microservices Spring Boot pour l’application Finders Keepers
+﻿# BackFindersKeepers – Backend Spring Boot pour l’application FindersKeepers
 
 Backend Java 17+ basé sur une architecture microservices RESTful, fournissant les services essentiels pour l’application de signalement d’objets perdus/trouvés.
 
