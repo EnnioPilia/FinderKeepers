@@ -1,27 +1,47 @@
 <div class="container">
-  <div class="conversations">
-    <h3>Conversations</h3>
-    <ul>
-      <li *ngFor="let conv of conversations"
-          [class.selected]="conv.id === selectedConversationId">
-        {{ conv.nom }} <br/>
-        <small>Participants :</small>
-        {{ getUserDisplayName(conv.user1) }} &amp; {{ getUserDisplayName(conv.user2) }}
-        <br />
-        <button (click)="fetchMessagesByConversationId(conv.id)">Voir les messages</button>
-      </li>
-    </ul>
+  <h2>Gestion des conversations</h2>
+
+  <!-- TABLE CONVERSATIONS -->
+  <table *ngIf="conversations.length > 0">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Nom</th>
+        <th>Participants</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr *ngFor="let conv of conversations">
+        <td>{{ conv.id }}</td>
+        <td>{{ conv.nom }}</td>
+        <td>
+          {{ getUserDisplayName(conv.user1) }} &amp;
+          {{ getUserDisplayName(conv.user2) }}
+        </td>
+        <td>
+          <button (click)="fetchMessagesByConversationId(conv.id)">
+            Voir messages
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- AUCUNE CONVERSATION -->
+  <div *ngIf="conversations.length === 0" class="text-muted">
+    Aucune conversation.
   </div>
 
-  <div class="messages" *ngIf="selectedConversationId">
+  <!-- MESSAGES -->
+  <div class="messages-box" *ngIf="selectedConversationId">
     <h3>Messages de la conversation #{{ selectedConversationId }}</h3>
 
-    <!-- Aucun message -->
-    <div *ngIf="messages.length === 0" class="no-message">
+    <div *ngIf="messages.length === 0" class="text-muted">
       Aucun message dans cette conversation.
     </div>
 
-    <!-- Liste des messages -->
     <ul *ngIf="messages.length > 0">
       <li *ngFor="let msg of messages">
         <strong>{{ msg.senderId }}</strong> : {{ msg.contenu }}

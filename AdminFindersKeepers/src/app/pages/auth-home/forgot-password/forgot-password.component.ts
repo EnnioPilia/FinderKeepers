@@ -52,7 +52,6 @@ export class ForgotPasswordComponent implements OnInit {
 
         // Redirection après 3 secondes ca marche pas 
         setTimeout(() => {
-          console.log("⏳ Redirection vers /login en cours...");
           this.router.navigate(['/home-login']);
         }, 3000);
 

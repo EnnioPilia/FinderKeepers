@@ -1,19 +1,42 @@
 <div class="dashboard">
 
   <h2>Tableau de bord Admin</h2>
-  <section class="stats">
-    <h3>Statistiques générales</h3>
 
-    <div *ngIf="loadingStats">Chargement des statistiques...</div>
-    <div *ngIf="errorStats" class="error">{{ errorStats }}</div>
+  <div *ngIf="loadingStats" class="loading">
+    Chargement des statistiques...
+  </div>
 
-    <div *ngIf="stats && !loadingStats && !errorStats">
-      <p>Utilisateurs : {{ stats.usersCount }}</p>
-      <p>Utilisateurs actifs : {{ stats.activeUsersCount }}</p>
-      <p>Annonces : {{ stats.adsCount }}</p>
-      <p>Objets perdus : {{ stats.lostObjectsCount }}</p>
-      <p>Objets retrouvés : {{ stats.foundObjectsCount }}</p>
+  <div *ngIf="errorStats" class="error">
+    {{ errorStats }}
+  </div>
+
+  <div *ngIf="stats && !loadingStats && !errorStats" class="stats">
+
+    <div class="card primary">
+      <h3>Utilisateurs</h3>
+      <p>{{ stats.usersCount }}</p>
     </div>
-  </section>
-  <hr/>
+
+    <!-- <div class="card success">
+      <h3>Utilisateurs actifs</h3>
+      <p>{{ stats.activeUsersCount }}</p>
+    </div> -->
+
+    <div class="card warning">
+      <h3>Annonces</h3>
+      <p>{{ stats.adsCount }}</p>
+    </div>
+
+    <div class="card danger">
+      <h3>Objets perdus</h3>
+      <p>{{ stats.lostObjectsCount }}</p>
+    </div>
+
+    <div class="card primary">
+      <h3>Objets retrouvés</h3>
+      <p>{{ stats.foundObjectsCount }}</p>
+    </div>
+
+  </div>
+
 </div>

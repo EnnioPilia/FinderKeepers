@@ -33,8 +33,7 @@ public class SecurityConfig {
     @Bean
     public CorsConfigurationSource corsConfigurationSource() {
         CorsConfiguration config = new CorsConfiguration();
-        config.setAllowedOrigins(List.of("http://192.168.1.108:8081")); // Ton frontend maison
-        config.setAllowedOrigins(List.of("http://localhost:4200")); // Ton frontend ici
+        config.setAllowedOrigins(List.of("http://localhost:4200")); 
         config.setAllowedMethods(List.of("GET", "POST", "PUT", "DELETE", "OPTIONS"));
         config.setAllowedHeaders(List.of("*"));
         config.setAllowCredentials(true);

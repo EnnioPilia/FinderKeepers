@@ -25,14 +25,11 @@ export class ConversationComponent implements OnInit {
 
   // Charge toutes les conversations
   loadConversations(): void {
-    console.log('Chargement des conversations...');
     this.adminService.getAllConversations().subscribe({
       next: (data) => {
-        console.log('Conversations reçues :', data);
         this.conversations = data;
       },
       error: (err) => {
-        console.error('Erreur lors du chargement des conversations', err);
       }
     });
   }
@@ -40,14 +37,11 @@ export class ConversationComponent implements OnInit {
   // Charge les messages d'une conversation
   fetchMessagesByConversationId(conversationId: number): void {
     this.selectedConversationId = conversationId;
-    console.log(`Chargement des messages pour la conversation ${conversationId}...`);
     this.adminService.getMessagesByConversation(conversationId).subscribe({
       next: (data: Message[]) => {
-        console.log(`Messages reçus pour conversation ${conversationId}`, data);
         this.messages = data;
       },
       error: (err) => {
-        console.error('Erreur lors du chargement des messages :', err);
       }
     });
   }

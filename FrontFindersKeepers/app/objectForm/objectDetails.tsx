@@ -124,7 +124,6 @@ export default function ObjectDetails() {
       try {
         const { status } = await Location.requestForegroundPermissionsAsync();
         if (status !== 'granted') {
-          console.warn('Permission géolocalisation refusée');
           return;
         }
         const location = await Location.getCurrentPositionAsync({});
@@ -134,7 +133,6 @@ export default function ObjectDetails() {
         const dist = getDistanceFromLatLonInKm(userLat, userLng, latitude, longitude);
         setDistanceKm(dist);
       } catch (error) {
-        console.warn('Erreur géolocalisation', error);
       }
     };
     calcDistance();

@@ -4,7 +4,7 @@ import { Users } from '../../models/users.model';
 import { Observable, throwError } from 'rxjs';
 import { catchError, tap } from 'rxjs/operators';
 import { jwtDecode } from 'jwt-decode';
-import { environment } from '../../../../environments/environment.prod';
+import { environment } from '../../../../environments/environment';
 
 interface PasswordResetRequestDto {
   email: string;
@@ -29,15 +29,10 @@ export class AuthService {
       withCredentials: true
     }).pipe(
       tap(response => {
-        // Stocker le token dans le localStorage
         localStorage.setItem('authToken', response.token);
-        // Decode and log the token payload for debugging
         try {
           const decodedToken: any = jwtDecode(response.token);
-          console.log('Decoded JWT Token Payload:', decodedToken);
-          console.log('User Role from Token:', decodedToken.role);
         } catch (e) {
-          console.error('Error decoding token:', e);
         }
       }),
       catchError(err => {
@@ -52,7 +47,7 @@ export class AuthService {
     }).pipe(
       tap(() => {
         this.currentUser = null;
-        localStorage.removeItem('authToken'); // Supprimer token au logout
+        localStorage.removeItem('authToken'); 
       })
     );
   }

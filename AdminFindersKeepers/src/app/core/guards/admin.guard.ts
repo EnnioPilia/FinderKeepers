@@ -19,7 +19,6 @@ export const adminGuard: CanActivateFn = (route, state) => {
         return false;
       }
     } catch (error) {
-      console.error('Error decoding token:', error);
       router.navigate(['/login']);
       return false;
     }

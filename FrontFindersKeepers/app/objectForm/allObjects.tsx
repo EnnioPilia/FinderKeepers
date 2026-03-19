@@ -63,7 +63,6 @@ export default function AllObjects() {
         setObjects(filtered);
         setLoading(false);
       } catch (err) {
-        console.error("Erreur lors du chargement :", err);
         setLoading(false);
       }
     };

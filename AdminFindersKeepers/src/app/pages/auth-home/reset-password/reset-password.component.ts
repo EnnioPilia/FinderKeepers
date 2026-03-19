@@ -42,11 +42,8 @@ export class ResetPasswordComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    // Récupérer le token depuis l'URL
-    this.token = this.route.snapshot.queryParamMap.get('token') || '';
-    
-      console.log("🔐 Token récupéré depuis l'URL :", this.token);
 
+    this.token = this.route.snapshot.queryParamMap.get('token') || '';
 
     if (!this.token) {
       this.errorMessage = "Token de réinitialisation manquant dans l'URL.";

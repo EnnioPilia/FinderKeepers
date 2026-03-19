@@ -36,7 +36,6 @@ export default function EditProfile() {
     const loadUser = async () => {
       try {
         const storedToken = await AsyncStorage.getItem("token");
-        console.log("Token:", storedToken);
         if (!storedToken) {
           Alert.alert("Erreur", "Utilisateur non authentifié.");
           setLoading(false);
@@ -48,9 +47,7 @@ export default function EditProfile() {
           headers: { Authorization: `Bearer ${storedToken}` },
         });
 
-        console.log("Status:", response.status);
         const text = await response.text();
-        console.log("Response body:", text);
 
         if (!response.ok) {
           throw new Error(`HTTP error ${response.status}`);
@@ -64,7 +61,6 @@ export default function EditProfile() {
         setAge(String(data.age));
         setEmail(data.email);
       } catch (error) {
-        console.error("Erreur fetch:", error);
         Alert.alert("Erreur", "Impossible de charger le profil.");
       } finally {
         setLoading(false);
@@ -130,7 +126,6 @@ export default function EditProfile() {
       router.push("/profile/profile");
 
     } catch (error) {
-      console.error("Erreur lors de la mise à jour:", error);
       Alert.alert("Erreur", "Une erreur est survenue lors de la mise à jour.");
     } finally {
       setSaving(false);

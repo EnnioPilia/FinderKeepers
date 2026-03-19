@@ -65,7 +65,6 @@ export default function Register() {
         password,
       };
 
-      console.log("Données envoyées à l'API register :", payload);
 
       const response = await fetch("http://192.168.1.26:8080/auth/register", {
         method: "POST",
@@ -89,7 +88,6 @@ export default function Register() {
         });
       }
     } catch (error) {
-      console.error(error);
       Toast.show({
         type: "error",
         text1: "Erreur",
