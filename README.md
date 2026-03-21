@@ -9,9 +9,9 @@ Monorepo complet de l’application **Finders Keepers**, une solution fullstack 
 ```text
 FindersKeepers/
 │
-├── BackFindersKeepers/              # API REST (Spring Boot microservices)
-├── FrontFindersKeepers/             # Application mobile + web (React Native / React)
-├── AdminFindersKeepers/             # Interface d’administration (Angular)
+├── BackFindersKeepers/              # API REST - Spring Boot 
+├── FrontFindersKeepers/             # Application mobile + web - React Native / React
+├── AdminFindersKeepers/             # Interface d’administration - Angular
 └── README.md
 ```
 
