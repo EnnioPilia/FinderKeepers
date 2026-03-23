@@ -63,7 +63,6 @@ Clients (Mobile / Web / Admin)
 - Spring Security + JWT
 - PostgreSQL / MySQL
 - Maven
-- Docker
 
 ###  Lancement
 
