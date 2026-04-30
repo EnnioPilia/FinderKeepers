@@ -147,10 +147,10 @@ Puis lancer chaque service séparément :
 
 ---
 
-##  Auteurs
+##  Développeurs
 
-- Ennio Pilia – Développeur Fullstack
-- Quentin Zampieri – Co-développeur
+- Ennio Pilia 
+- Quentin Zampieri 
 
 ---
 
