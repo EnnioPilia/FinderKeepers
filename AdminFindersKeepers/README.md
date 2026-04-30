@@ -43,10 +43,10 @@ Permet la gestion des utilisateurs, annonces, et le suivi des signalements.
 
 ---
 
-##  Auteurs
+##  Développeurs
 
-**Ennio Pilia** – Développeur Fullstack Java / Angular  
-**Quentin** – Co-développeur frontend admin  
+**Ennio Pilia**  
+**Quentin Zampieri**
 
 
 ---
