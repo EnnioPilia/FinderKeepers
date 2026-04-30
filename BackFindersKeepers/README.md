@@ -39,8 +39,8 @@ Backend Java 17+ basé sur une architecture microservices RESTful, fournissant l
 ---
 
 ##  Auteurs
- **Ennio Pilia** – Développeur Fullstack Java / Spring Boot  
-**Quentin** – Co-développeur backend  
+ **Ennio Pilia** 
+**Quentin Zampieri** 
 
 ---
 
