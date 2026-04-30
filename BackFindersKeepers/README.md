@@ -38,7 +38,7 @@ Backend Java 17+ basé sur une architecture microservices RESTful, fournissant l
 
 ---
 
-##  Auteurs
+##  Développeurs
  **Ennio Pilia** 
 **Quentin Zampieri** 
 
