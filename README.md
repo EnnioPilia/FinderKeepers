@@ -1,6 +1,7 @@
-#  FindersKeepers – Monorepo
+#  FindersKeepers 
 
-Monorepo complet de l’application **Finders Keepers**, une solution fullstack permettant de signaler, rechercher et gérer des objets perdus ou trouvés.
+ **Finders Keepers** est une application mobile permettant de signaler, rechercher et gérer des objets perdus ou trouvés.
+ Ce projet a été développé en binôme dans le cadre de la formation CDA Simplon Grenoble 2025-2026.
 
 ---
 
@@ -103,7 +104,7 @@ npm start
 
 ---
 
-## 🛠️Admin – Angular
+## Admin – Angular
 
 ###  Fonctionnalités
 
@@ -112,7 +113,7 @@ npm start
 - Modération annonces
 - Gestion messages
 
-### 🛠️ Stack
+### Stack
 
 - Angular
 - Angular Router
@@ -149,7 +150,7 @@ Puis lancer chaque service séparément :
 ##  Auteurs
 
 - Ennio Pilia – Développeur Fullstack
-- Quentin – Co-développeur
+- Quentin Zampieri – Co-développeur
 
 ---
 
